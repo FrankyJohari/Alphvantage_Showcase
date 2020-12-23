@@ -565,6 +565,7 @@
                         <outlet property="isLoading" destination="N7G-EE-t5O" id="uzL-8D-1mp"/>
                         <outlet property="searchButton" destination="eD2-uo-3az" id="dvt-VR-HVy"/>
                         <outlet property="textFieldSymbol" destination="pgO-sb-OoW" id="oQG-cg-zWh"/>
+                        <outlet property="textfieldSort" destination="rMZ-3S-cZi" id="YgZ-1K-mca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkI-eK-pjG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

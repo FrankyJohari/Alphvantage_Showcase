@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ClockKit
 
 
 class SettingViewController: UIViewController {
@@ -25,6 +24,8 @@ class SettingViewController: UIViewController {
         pickerInterval.dataSource = self
         pickerInterval.delegate = self
         
+        self.hideKeyboardWhenTappedAround()
+        
         textFieldInterval.inputView = pickerInterval
         textFieldInterval.placeholder = "Select Output Size"
         
@@ -38,6 +39,17 @@ class SettingViewController: UIViewController {
         textFieldAPIKey.text = userDefaults.string(forKey: "APIKey")
        
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Load userdefaults
+        if(userDefaults.string(forKey: "OutputSize") == "Compact"){
+            segmentControlOutputSize.selectedSegmentIndex = 1
+        }else{
+            segmentControlOutputSize.selectedSegmentIndex = 0
+        }
+        textFieldInterval.text = userDefaults.string(forKey: "Interval")
+        textFieldAPIKey.text = userDefaults.string(forKey: "APIKey")
     }
     
 
