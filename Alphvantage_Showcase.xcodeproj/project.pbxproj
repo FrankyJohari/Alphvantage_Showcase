@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3122752625926D2700C1369C /* comparisonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122752525926D2700C1369C /* comparisonCell.swift */; };
 		31677559258FD69B00A2590A /* searchDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31677558258FD69B00A2590A /* searchDetailCell.swift */; };
 		318EAD0B258E447B00B80AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EAD0A258E447B00B80AB8 /* AppDelegate.swift */; };
 		318EAD0D258E447B00B80AB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EAD0C258E447B00B80AB8 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3122752525926D2700C1369C /* comparisonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comparisonCell.swift; sourceTree = "<group>"; };
 		31677558258FD69B00A2590A /* searchDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchDetailCell.swift; sourceTree = "<group>"; };
 		318EAD07258E447B00B80AB8 /* Alphvantage_Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alphvantage_Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EAD0A258E447B00B80AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				31677558258FD69B00A2590A /* searchDetailCell.swift */,
+				3122752525926D2700C1369C /* comparisonCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				318EAD0B258E447B00B80AB8 /* AppDelegate.swift in Sources */,
 				318EAD25258E481700B80AB8 /* ComparisonViewController.swift in Sources */,
+				3122752625926D2700C1369C /* comparisonCell.swift in Sources */,
 				318EAD21258E480400B80AB8 /* SettingViewController.swift in Sources */,
 				318EAD0D258E447B00B80AB8 /* SceneDelegate.swift in Sources */,
 				31677559258FD69B00A2590A /* searchDetailCell.swift in Sources */,
@@ -321,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V36G4TKMT5;
 				INFOPLIST_FILE = Alphvantage_Showcase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V36G4TKMT5;
 				INFOPLIST_FILE = Alphvantage_Showcase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

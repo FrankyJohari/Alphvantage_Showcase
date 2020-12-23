@@ -14,12 +14,11 @@ struct TimeSeries{
     var lowVal: String
     var closeVal: String
     
-//    init(timedate: [String], openVal: [String], highVal: [String], lowVal: [String], closeVal: [String]) {
-//        self.timedate = timedate
-//        self.openVal = openVal
-//        self.highVal = highVal
-//        self.lowVal = lowVal
-//        self.closeVal = closeVal
-//    }
-    
+}
+
+struct DailyAdjusted{
+    var symbol: String
+    var timedate: String
+    var openVal: String
+    var lowVal: String
 }

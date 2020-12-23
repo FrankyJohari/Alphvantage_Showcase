@@ -11,20 +11,19 @@ class SearchViewController: UIViewController {
 
     @IBOutlet weak var textFieldSymbol: UITextField!
     @IBOutlet weak var intradayDetailTable: UITableView!
+    @IBOutlet weak var isLoading: UIActivityIndicatorView!
+    @IBOutlet weak var searchButton: UIButton!
     
     let userDefaults = UserDefaults.standard
     var interval: String = ""
     var outputSize: String = ""
     var apiKey: String = ""
-//    var timeserieses = TimeSeries(timedate: [], openVal: [], highVal: [], lowVal: [], closeVal: [])
     var timeseriesarray: [TimeSeries] = [TimeSeries]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        isLoading.isHidden = true
 
-        // Do any additional setup after loading the view.
-        textFieldSymbol.text = "IBM"
-        
     }
     
 
@@ -37,16 +36,13 @@ class SearchViewController: UIViewController {
             }))
             present(alert, animated: true)
         }else{
+            searchButton.isEnabled = false
+            isLoading.isHidden = false
+            isLoading.startAnimating()
             timeseriesarray.removeAll()
-//            timeserieses.timedate?.removeAll()
-//            timeserieses.lowVal?.removeAll()
-//            timeserieses.highVal?.removeAll()
-//            timeserieses.openVal?.removeAll()
-//            timeserieses.closeVal?.removeAll()
             interval = userDefaults.string(forKey: "Interval")!
             outputSize = userDefaults.string(forKey: "OutputSize")!.lowercased()
             apiKey = userDefaults.string(forKey: "APIKey")!
-            print("btn")
             fetchIntraDay()
         }
     }
@@ -59,13 +55,10 @@ class SearchViewController: UIViewController {
 
         guard let data = data else { return }
         guard let jsonIntra = try? JSONSerialization.jsonObject(with: data, options: []) else {return}
-        print("ini jsonintra")
         if let dictionary = jsonIntra as? [String: Any] {
             
             let getTime = "Time Series (\(self.interval))"
-
             guard let timeSeries = dictionary[getTime] as? [String: Any] else {return}
-            
             for (key, value) in timeSeries {
                 guard let detail = timeSeries[key] as? [String: Any] else {return}
 
@@ -88,6 +81,9 @@ class SearchViewController: UIViewController {
         
         DispatchQueue.main.async {
             self.intradayDetailTable.reloadData()
+            self.isLoading.stopAnimating()
+            self.isLoading.isHidden = true
+            self.searchButton.isEnabled = true
         }
 
            }.resume()
