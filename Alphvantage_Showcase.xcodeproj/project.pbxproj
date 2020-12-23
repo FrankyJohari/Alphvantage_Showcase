@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3122752625926D2700C1369C /* comparisonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122752525926D2700C1369C /* comparisonCell.swift */; };
+		312275542592FD6B00C1369C /* Alphvantage_ShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312275532592FD6B00C1369C /* Alphvantage_ShowcaseTests.swift */; };
 		31677559258FD69B00A2590A /* searchDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31677558258FD69B00A2590A /* searchDetailCell.swift */; };
 		318EAD0B258E447B00B80AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EAD0A258E447B00B80AB8 /* AppDelegate.swift */; };
 		318EAD0D258E447B00B80AB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EAD0C258E447B00B80AB8 /* SceneDelegate.swift */; };
@@ -20,8 +21,21 @@
 		318EAD2C258E8F6A00B80AB8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318EAD2B258E8F6A00B80AB8 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		312275562592FD6B00C1369C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318EACFF258E447B00B80AB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318EAD06258E447B00B80AB8;
+			remoteInfo = Alphvantage_Showcase;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3122752525926D2700C1369C /* comparisonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comparisonCell.swift; sourceTree = "<group>"; };
+		312275512592FD6B00C1369C /* Alphvantage_ShowcaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alphvantage_ShowcaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		312275532592FD6B00C1369C /* Alphvantage_ShowcaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphvantage_ShowcaseTests.swift; sourceTree = "<group>"; };
+		312275552592FD6B00C1369C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31677558258FD69B00A2590A /* searchDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchDetailCell.swift; sourceTree = "<group>"; };
 		318EAD07258E447B00B80AB8 /* Alphvantage_Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alphvantage_Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		318EAD0A258E447B00B80AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3122754E2592FD6B00C1369C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		318EAD04258E447B00B80AB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +68,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		312275522592FD6B00C1369C /* Alphvantage_ShowcaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				312275532592FD6B00C1369C /* Alphvantage_ShowcaseTests.swift */,
+				312275552592FD6B00C1369C /* Info.plist */,
+			);
+			path = Alphvantage_ShowcaseTests;
+			sourceTree = "<group>";
+		};
 		31677557258FD67500A2590A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				318EAD09258E447B00B80AB8 /* Alphvantage_Showcase */,
+				312275522592FD6B00C1369C /* Alphvantage_ShowcaseTests */,
 				318EAD08258E447B00B80AB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				318EAD07258E447B00B80AB8 /* Alphvantage_Showcase.app */,
+				312275512592FD6B00C1369C /* Alphvantage_ShowcaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +133,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		312275502592FD6B00C1369C /* Alphvantage_ShowcaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 312275582592FD6B00C1369C /* Build configuration list for PBXNativeTarget "Alphvantage_ShowcaseTests" */;
+			buildPhases = (
+				3122754D2592FD6B00C1369C /* Sources */,
+				3122754E2592FD6B00C1369C /* Frameworks */,
+				3122754F2592FD6B00C1369C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				312275572592FD6B00C1369C /* PBXTargetDependency */,
+			);
+			name = Alphvantage_ShowcaseTests;
+			productName = Alphvantage_ShowcaseTests;
+			productReference = 312275512592FD6B00C1369C /* Alphvantage_ShowcaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		318EAD06258E447B00B80AB8 /* Alphvantage_Showcase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 318EAD1B258E447D00B80AB8 /* Build configuration list for PBXNativeTarget "Alphvantage_Showcase" */;
@@ -127,6 +177,10 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					312275502592FD6B00C1369C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 318EAD06258E447B00B80AB8;
+					};
 					318EAD06258E447B00B80AB8 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -146,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				318EAD06258E447B00B80AB8 /* Alphvantage_Showcase */,
+				312275502592FD6B00C1369C /* Alphvantage_ShowcaseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3122754F2592FD6B00C1369C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		318EAD05258E447B00B80AB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +226,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3122754D2592FD6B00C1369C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312275542592FD6B00C1369C /* Alphvantage_ShowcaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		318EAD03258E447B00B80AB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +250,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		312275572592FD6B00C1369C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318EAD06258E447B00B80AB8 /* Alphvantage_Showcase */;
+			targetProxy = 312275562592FD6B00C1369C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		318EAD10258E447B00B80AB8 /* Main.storyboard */ = {
@@ -201,6 +279,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		312275592592FD6B00C1369C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V36G4TKMT5;
+				INFOPLIST_FILE = Alphvantage_ShowcaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "frankyjohari.Alphvantage-ShowcaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alphvantage_Showcase.app/Alphvantage_Showcase";
+			};
+			name = Debug;
+		};
+		3122755A2592FD6B00C1369C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V36G4TKMT5;
+				INFOPLIST_FILE = Alphvantage_ShowcaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "frankyjohari.Alphvantage-ShowcaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alphvantage_Showcase.app/Alphvantage_Showcase";
+			};
+			name = Release;
+		};
 		318EAD19258E447D00B80AB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -252,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -307,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		312275582592FD6B00C1369C /* Build configuration list for PBXNativeTarget "Alphvantage_ShowcaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				312275592592FD6B00C1369C /* Debug */,
+				3122755A2592FD6B00C1369C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		318EAD02258E447B00B80AB8 /* Build configuration list for PBXProject "Alphvantage_Showcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
